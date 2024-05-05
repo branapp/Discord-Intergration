@@ -51,7 +51,7 @@ client.on(Events.InteractionCreate, async interaction => {
 
 client.once(Events.ClientReady, readyClient => {
 	logger.info(`Logged in as ${client.user.tag}!`);
-	client.user.setAvatar('../public/assets/img/bran.png');
+	client.user.setAvatar('Images/bran.png');
 	client.user.setActivity('Bran');
 });
 
