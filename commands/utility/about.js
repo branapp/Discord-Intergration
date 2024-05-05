@@ -15,7 +15,6 @@ module.exports = {
 		{ name: 'Packages used', value: '`discord.js`: 14.14.1\n `winston`: 3.13.0', inline: true },
 		{ name: 'Inline field title', value: 'Some value here', inline: true },
 	)
-	.setImage('https://truffle.signed.host/J7tUA.jpeg')
 	.setTimestamp()
 		await interaction.reply({ embeds: [about] });
 	},
