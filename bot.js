@@ -51,8 +51,8 @@ client.on(Events.InteractionCreate, async interaction => {
 
 client.once(Events.ClientReady, readyClient => {
 	logger.info(`Logged in as ${client.user.tag}!`);
-	client.user.setAvatar('Images/bran.png');
-	client.user.setActivity('Bran');
+	client.user.setAvatar('Images/bot_logo.png');
+	client.user.setActivity('Its dev so i have a excuse to fuck up the slash command list');
 });
 
 // Log in to Discord with your client's token
