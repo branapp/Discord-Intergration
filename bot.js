@@ -2,7 +2,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const { token, logchannel } = require('./config.json');
+const { token, logchannel, status, botlogo } = require('./config.json');
 const { logger, logError } = require("./Tools/logging.js");
 
 // Create a new client instance
@@ -51,8 +51,8 @@ client.on(Events.InteractionCreate, async interaction => {
 
 client.once(Events.ClientReady, readyClient => {
 	logger.info(`Logged in as ${client.user.tag}!`);
-	client.user.setAvatar('Images/bot_logo.png');
-	client.user.setActivity('Bran - It all started with a drink');
+	client.user.setAvatar(botlogo);
+	client.user.setActivity(status);
 });
 
 // Log in to Discord with your client's token

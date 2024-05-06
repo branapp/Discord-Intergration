@@ -2,5 +2,7 @@
     "token": "",
     "guildId": "",
     "clientId": "",
-    "logchannel": ""
+    "logchannel": "",
+    "status": "Bran - It started with a drink",
+    "botlogo": "Images/bot_logo.png"
   }
