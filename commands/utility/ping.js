@@ -6,11 +6,8 @@ module.exports = {
 		.setDescription('Replies with Pong!'),
 	async execute(interaction, client) {
 		await interaction.deferReply();
-	
 		const reply = await interaction.fetchReply();
-	
 		const ping = reply.createdTimestamp - interaction.createdTimestamp;
-	
 		interaction.editReply(
 		  `Pong! Client ${ping}ms `
 		);
